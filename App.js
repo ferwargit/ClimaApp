@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox } from "react-native";
 import Navegacion from './app/navegacion/Navegacion';
+
+LogBox.ignoreLogs(["It appears that"]);
 
 
 export default function App() {
