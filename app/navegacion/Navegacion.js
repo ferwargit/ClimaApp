@@ -24,7 +24,7 @@ export default function Navegacion() {
                 initialRouteName="buscar"
                 tabBarOptions={{
                     inactiveTintColor: "#646464",
-                    activeTintColor: "#00a680",
+                    activeTintColor: "#00aaff",
                 }}
                 screenOptions={({ route }) => ({
                     tabBarIcon: ({ color }) => screenOptions(route, color),
