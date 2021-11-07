@@ -8,7 +8,17 @@ const Stack = createStackNavigator();
 
 export default function HomeStack() {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator
+        screenOptions={{
+            headerStyle: {
+              backgroundColor: '#00aaff',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        >
             <Stack.Screen
                 name="buscar"
                 component={Buscar}

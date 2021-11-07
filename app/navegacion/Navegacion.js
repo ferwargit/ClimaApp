@@ -21,7 +21,7 @@ export default function Navegacion() {
     return (
         <NavigationContainer>
             <Tab.Navigator
-                initialRouteName="buscar"
+                initialRouteName="home"
                 tabBarOptions={{
                     inactiveTintColor: "#646464",
                     activeTintColor: "#00aaff",
@@ -31,6 +31,11 @@ export default function Navegacion() {
                 })}
             >
                 <Tab.Screen
+                    name="home"
+                    component={HomeStack}
+                    options={{ title: "Home" }}
+                />
+                <Tab.Screen
                     name="buscar"
                     component={BuscarStack}
                     options={{ title: "Buscar" }}
@@ -39,12 +44,7 @@ export default function Navegacion() {
                     name="favoritos"
                     component={FavoritosStack}
                     options={{ title: "Favoritos" }}
-                />
-                <Tab.Screen
-                    name="home"
-                    component={HomeStack}
-                    options={{ title: "Home" }}
-                />
+                />                
             </Tab.Navigator>
         </NavigationContainer>
     )

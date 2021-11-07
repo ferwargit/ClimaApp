@@ -8,7 +8,7 @@ LogBox.ignoreLogs(["It appears that"]);
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor="#00aaff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#00aaff"  />
       <Navegacion />
     </>
   );
