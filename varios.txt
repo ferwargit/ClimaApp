@@ -1,4 +1,9 @@
+** INICIO App **
+
 expo init ClimaApp --template blank@42.0.1
+
+** REACT-NAVIGATION **
+https://reactnavigation.org/docs/5.x/getting-started
 
 npm install @react-navigation/native@^5.1.5
 
@@ -11,3 +16,14 @@ expo install @react-native-community/masked-view@^0.1.6
 npm install @react-navigation/stack@^5.2.10
 
 npm install @react-navigation/bottom-tabs@^5.2.6
+
+** REACT NATIVE ELEMENTS **
+https://reactnativeelements.com/
+
+npm install react-native-elements@^3.4.2
+
+
+
+
+
+
