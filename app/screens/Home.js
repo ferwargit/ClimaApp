@@ -7,7 +7,7 @@ export default function Home() {
             <Text>Home App</Text>
             <Button
                 title="Quienes Somos"
-                color="#00aaff"
+                color="#7FB3D5"
                 
             />
         </View>
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         // backgroundColor: "#A7C7E7"
         backgroundColor: 'rgb(71, 149, 212)',
+        
     },
     
     
