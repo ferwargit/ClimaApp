@@ -14,18 +14,12 @@ const Formulario = () => {
 
 
                     <View style={styles.formulario}>
-                        <View>
-                            <TextInput
-                                style={styles.input}
-                                placeholder="Ciudad"
-                                placeholderTextColor="#666"
-                            />
-                        </View>
+
                         <View>
                             <Picker
-                                itemStyle={{ height: 120, backgroundColor: '#FFF'}}
+                                itemStyle={{ height: 120, backgroundColor: '#FFF' }}
                             >
-                                <Picker.Item label="Seleccione un país" value="" />
+                                <Picker.Item label="SELECCIONE UN PAIS" value="" />
                                 <Picker.Item label="Estados Unidos" value="US" />
                                 <Picker.Item label="México" value="MX" />
                                 <Picker.Item label="Argentina" value="AR" />
@@ -35,6 +29,15 @@ const Formulario = () => {
                                 <Picker.Item label="Perú" value="PE" />
                             </Picker>
                         </View>
+
+                        <View>
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Ingrese Ciudad"
+                                placeholderTextColor="#666"
+                            />
+                        </View>
+
                         <TouchableWithoutFeedback>
                             <View
                                 style={styles.btnBuscar}

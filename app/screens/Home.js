@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, Button } from "react-native";
 export default function Home() {
     return (
         <View style={styles.text}>
-            <Text>Home...</Text>
+            <Text>Home App</Text>
             <Button
                 title="Quienes Somos"
                 color="#00aaff"
