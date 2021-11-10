@@ -1,10 +1,13 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
+import Formulario from "../componentes/Formulario";
+
 export default function Home() {
     return (
         <View style={styles.text}>
-            <Text>Buscar...</Text>
+            
+            <Formulario />
         </View>
     )
 }
