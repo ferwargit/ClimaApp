@@ -22,8 +22,8 @@ https://reactnativeelements.com/
 
 npm install react-native-elements@^3.4.2
 
-
-
+** PARA EL FORMULARIO **
+npm install @react-native-community/picker@^1.2.0
 
 
 
