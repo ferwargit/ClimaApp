@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 
 import Formulario from "../componentes/Formulario";
 
 export default function Buscar() {
+
+    const [ busqueda, guardarBusqueda ] = useState({
+        ciudad: '',
+        pais: ''
+    });
+
     return (
         <>
             <View style={styles.buscar}>
                 <View style={styles.contenido}>
-                    <Formulario />
+                    <Formulario
+                        busqueda={busqueda}
+                        guardarBusqueda={guardarBusqueda}
+                    />
                 </View>
             </View>
         </>
