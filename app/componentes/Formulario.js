@@ -1,8 +1,31 @@
-import React from 'react';
-import { Text, TextInput, View, StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import React, { useState } from 'react';
+import { Text, TextInput, View, StyleSheet, TouchableWithoutFeedback, Animated } from 'react-native';
 import { Picker } from '@react-native-community/picker';
 
 const Formulario = () => {
+
+    const [animacionboton] = useState(new Animated.Value(1));
+
+    const animacionEntrada = () => {
+        Animated.spring(animacionboton, {
+            toValue: .75,
+            useNativeDriver: false
+        }).start();
+    }
+
+    const animacionSalida = () => {
+        Animated.spring(animacionboton, {
+            toValue: 1,
+            useNativeDriver: false,
+            friction: 4,
+            tension: 30
+        }).start();
+    }
+
+    const estiloAnimacion = {
+        transform: [{ scale: animacionboton }]
+    }
+
     return (
         <>
             <View>
@@ -15,7 +38,7 @@ const Formulario = () => {
                 </View>
                 <View>
                     <Picker
-                        itemStyle={{ height: 120, backgroundColor: '#FFF'}}
+                        itemStyle={{ height: 120, backgroundColor: '#FFF' }}
                     >
                         <Picker.Item label="-- Seleccione un país --" value="" />
                         <Picker.Item label="Argentina" value="AR" />
@@ -25,16 +48,21 @@ const Formulario = () => {
                         <Picker.Item label="Estados Unidos" value="US" />
                         <Picker.Item label="México" value="MX" />
                         <Picker.Item label="Perú" value="PE" />
-                        
+
                     </Picker>
                 </View>
 
-                <TouchableWithoutFeedback>
-                    <View
-                        style={styles.btnBuscar}
+                <TouchableWithoutFeedback
+                    onPressIn={() => animacionEntrada()}
+                    onPressOut={() => animacionSalida()}
+                    
+                >
+                    <Animated.View
+                        style={[styles.btnBuscar, estiloAnimacion]}
+                        
                     >
                         <Text style={styles.textoBuscar}>Buscar Clima</Text>
-                    </View>
+                    </Animated.View>
                 </TouchableWithoutFeedback>
             </View>
         </>
