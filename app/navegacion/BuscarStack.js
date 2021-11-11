@@ -6,7 +6,7 @@ import Buscar from "../screens/Buscar";
 
 const Stack = createStackNavigator();
 
-export default function HomeStack() {
+export default function BuscarStack() {
     return (
         <Stack.Navigator
         screenOptions={{
