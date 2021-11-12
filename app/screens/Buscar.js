@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Alert } from "react-native";
 
 import Formulario from "../componentes/Formulario";
 
@@ -16,17 +16,34 @@ export default function Buscar() {
     const { ciudad, pais } = busqueda;
 
     useEffect(() => {
-        if(consultar) {
-            // console.log('Consultando la API...')
-            const API_KEY = ''
-            const url = `api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}`
-
-            console.log(url);
-        }
-
         
+        const consultarClima = async () => {
 
+            if(consultar) {
+                // console.log('Consultando la API...')
+                const API_KEY = '930fbf0f18ecc4b596423c7fcd1b5fa2'
+                const url = `api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}`
+    
+                // console.log(url);
+    
+                try {
+                    const respuesta = await fetch(url);
+                    const resultado = await respuesta.json();
+                } catch (error) {
+                    mostrarAlerta();
+                }
+            }
+        }
+        consultarClima();
     }, [consultar])
+
+    const mostrarAlerta = () => {
+        Alert.alert(
+            'Error',
+            'No hay resultados, intenta con otra ciudad o país',
+            [{ text: 'OK'}]
+        )
+    }
 
     return (
         <>
