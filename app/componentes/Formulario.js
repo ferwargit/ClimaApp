@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Text, TextInput, View, StyleSheet, TouchableWithoutFeedback, Animated, Alert } from 'react-native';
 import { Picker } from '@react-native-community/picker';
 
-const Formulario = ({ busqueda, guardarBusqueda }) => {
+const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
 
     // Extraigo el pais y la ciudad
     const { pais, ciudad } = busqueda;
@@ -12,6 +12,9 @@ const Formulario = ({ busqueda, guardarBusqueda }) => {
             mostrarAlerta();
             return;
         }
+
+        // Si pasa la validacion consultar la API
+        guardarConsultar(true);
     }
 
     const mostrarAlerta = () => {
