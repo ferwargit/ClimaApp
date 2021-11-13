@@ -23,6 +23,13 @@ https://reactnativeelements.com/
 npm install react-native-elements@^3.4.2
 
 
+** Para Seccion BUSCAR **
+
+npm install redux@^4.0.5
+npm install redux-thunk@^2.3.0
+npm install react-redux@^7.2.2
+
+
 
 
 
