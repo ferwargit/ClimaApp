@@ -17,8 +17,8 @@ const WeatherData = ({ data }) => {
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Temp</Text>
           <View style={styles.tempContainer}>
-            <Text style={styles.boxText}>{data.main.temp}K</Text>
-            <Text style={styles.boxText}>{fahrenheit}&#8457;</Text>
+            {/* <Text style={styles.boxText}>{data.main.temp}K</Text> */}
+            {/* <Text style={styles.boxText}>{fahrenheit}&#8457;</Text> */}
             <Text style={styles.boxText}>{celsius}&#8451;</Text>
           </View>
         </View>
