@@ -6,7 +6,7 @@ import Favoritos from "../screens/Favoritos";
 
 const Stack = createStackNavigator();
 
-export default function HomeStack() {
+export default function FavoritosStack() {
     return (
         <Stack.Navigator
         screenOptions={{

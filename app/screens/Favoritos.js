@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function Home() {
+export default function Favoritos() {
     return (
         <View>
             <Text>Favoritos...</Text>
