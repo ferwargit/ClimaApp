@@ -5,10 +5,10 @@ import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 const Form = ({ search, onSetSearch, onSubmit }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Enter city name and press search button</Text>
+      {/* <Text style={styles.heading}>Ingrese el nombre de la ciudad y presione el botón de búsqueda</Text> */}
       <View>
-        <TextInput style={styles.input} placeholder="Enter city name..." value={search} onChangeText={(val) => onSetSearch(val)} />
-        <Button title="Search" onPress={onSubmit} />
+        <TextInput style={styles.input} placeholder="Ingrese el nombre de la ciudad ..." value={search} onChangeText={(val) => onSetSearch(val)} />
+        <Button title="Buscar" onPress={onSubmit} color="#00aaff"/>
       </View>
     </View>
   );
