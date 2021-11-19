@@ -15,8 +15,6 @@ export default function Home() {
                 style={styles.image}
             />
             <Text style={styles.textTitle}>Clima-App{'\n'}</Text>
-            <Text style={styles.text}>Aplicación de clima desarrollada en React Native.{'\n'}</Text>
-
             <TouchableOpacity
                 activeOpacity={0.8}
                 style={styles.btn}
