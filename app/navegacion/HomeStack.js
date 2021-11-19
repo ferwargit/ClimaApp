@@ -29,7 +29,7 @@ export default function HomeStack() {
       <Stack.Screen
         name="quienes somos"
         component={QuienesSomos}
-        options={{ title: "Quienes Somos" }}
+        options={{ title: "¿Quiénes somos?" }}
       />
 
     </Stack.Navigator>
