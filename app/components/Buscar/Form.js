@@ -7,7 +7,7 @@ const Form = ({ search, onSetSearch, onSubmit }) => {
     <View style={styles.container}>
       {/* <Text style={styles.heading}>Ingrese el nombre de la ciudad y presione el botón de búsqueda</Text> */}
       <View>
-        <TextInput style={styles.input} placeholder="Ingrese el nombre de la ciudad ..." value={search} onChangeText={(val) => onSetSearch(val)} />
+        <TextInput style={styles.input} placeholder="Ingrese una ciudad ..." value={search} onChangeText={(val) => onSetSearch(val)} />
         <Button title="Buscar" onPress={onSubmit} color="#00aaff"/>
       </View>
     </View>
@@ -17,7 +17,8 @@ const Form = ({ search, onSetSearch, onSubmit }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#f1f1f1',
+    //backgroundColor: '#f1f1f1',
+    backgroundColor: '#B3E5FC'
   },
   heading: {
     fontSize: 20,

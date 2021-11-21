@@ -42,9 +42,11 @@ const WeatherData = ({ data }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    
   },
   containerInner: {
     paddingHorizontal: 20,
+    
   },
   title: {
     fontSize: 24,
@@ -53,17 +55,21 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   box: {
-    borderWidth: 1,
-    borderColor: '#ddd',
+    borderWidth: 2,
+    //borderColor: '#ddd',
+    borderColor: '#03A9F4',
     padding: 15,
     marginBottom: 10,
     alignItems: 'center',
+    backgroundColor: '#4FC3F7',
+    borderRadius: 15,
   },
   boxLabel: {
     textTransform: 'uppercase',
     fontSize: 12,
     letterSpacing: 1,
     marginBottom: 5,
+    
   },
   boxText: {
     fontSize: 16,
@@ -78,6 +84,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignSelf: 'stretch',
+    
   },
 });
 

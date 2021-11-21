@@ -39,5 +39,6 @@ export default function Buscar() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#B3E5FC',
     },
 });

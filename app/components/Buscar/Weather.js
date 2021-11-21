@@ -17,7 +17,7 @@ const Weather = ({ loading, data, error }) => {
 
   return (
     <View style={styles.container}>
-      { loading ? <ActivityIndicator size="large" color="#00d1b2" /> : <WeatherData data={data} /> }
+      { loading ? <ActivityIndicator size="large" color="#00d1b2"  /> : <WeatherData data={data} /> }
     </View>
   );
 };
@@ -26,6 +26,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingVertical: 20,
+
+    
   },
   error: {
     color: 'red',

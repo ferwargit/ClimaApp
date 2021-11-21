@@ -78,6 +78,7 @@ export default function App() {
                 <StatusBar
                     animated={true}
                     backgroundColor="#00aaff"
+
                     barStyle="light-content"
                 />
                 <View style={styles.container}>
@@ -103,7 +104,7 @@ export default function App() {
         );
 
 
-    return (
+    return ( 
         <>
             <Provider store={store}>
 
@@ -120,6 +121,7 @@ const styles = StyleSheet.create({
     container: {
         // backgroundColor: '#142950',
         backgroundColor: '#00aaff',
+        
         flex: 0.40,
         alignItems: 'center',
         //justifyContent: 'flex-end',

@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, SafeAreaView, FlatList } from 'react-native';
 export default function QuienesSomos() {
     return (
         <SafeAreaView style={styles.container}>
-            <View>
+            
                 <Text style={styles.textTitle}>¿Quiénes somos?</Text>
                 <Text>
                     <View style={styles.instructions}>
@@ -25,7 +25,7 @@ export default function QuienesSomos() {
                 Proyecto grupal de una aplicación móvil desarrollada en React Native.
                 Diseñada para la busqueda del clima en ciudades de todo el mundo.
                 </Text>
-            </View>
+            
         </SafeAreaView>
     )
 }
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'stretch',
-        margin: 10
+        backgroundColor: '#B3E5FC',
+        padding: 12
     },
     instructions: {
         paddingTop: 5,
@@ -45,17 +46,20 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'normal',
         textAlign: 'left',
-        fontFamily: 'notoserif'
+        fontFamily: 'notoserif',
+        
     },
     textTitle: {
         fontSize: 25,
         fontWeight: 'normal',
         textAlign: 'left',
         fontFamily: 'notoserif',
+        
     },
     item: {
         padding: 10,
         fontSize: 18,
+        
     },
 
 });
