@@ -9,9 +9,7 @@ import store from './app/store/Buscar/index';
 LogBox.ignoreLogs(["It appears that"]);
 
 
-export default function App() {
-
-    
+export default function App() {  
 
     
     const [animated, setAnimated] = useState(false);

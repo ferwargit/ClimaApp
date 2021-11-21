@@ -1,6 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
+import Buscar from '../../screens/Buscar';
+
+
 
 const Form = ({ search, onSetSearch, onSubmit }) => {
   return (
@@ -9,6 +12,7 @@ const Form = ({ search, onSetSearch, onSubmit }) => {
       <View>
         <TextInput style={styles.input} placeholder="Ingrese el nombre de la ciudad ..." value={search} onChangeText={(val) => onSetSearch(val)} />
         <Button title="Buscar" onPress={onSubmit} color="#00aaff"/>
+        
       </View>
     </View>
   );
@@ -35,6 +39,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 10,
   },
+  
 });
 
 export default Form;

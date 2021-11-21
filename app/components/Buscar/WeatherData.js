@@ -15,7 +15,7 @@ const WeatherData = ({ data }) => {
           <Image style={styles.image} source={{ uri: `http://openweathermap.org/img/wn/${data.weather[0].icon}.png` }} />
         </View>
         <View style={styles.box}>
-          <Text style={styles.boxLabel}>Temp</Text>
+          <Text style={styles.boxLabel}>Temperatura</Text>
           <View style={styles.tempContainer}>
             {/* <Text style={styles.boxText}>{data.main.temp}K</Text> */}
             {/* <Text style={styles.boxText}>{fahrenheit}&#8457;</Text> */}
@@ -23,15 +23,15 @@ const WeatherData = ({ data }) => {
           </View>
         </View>
         <View style={styles.box}>
-          <Text style={styles.boxLabel}>Humidity</Text>
+          <Text style={styles.boxLabel}>Humedad</Text>
           <Text style={styles.boxText}>{data.main.humidity}%</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.boxLabel}>Pressure</Text>
+          <Text style={styles.boxLabel}>Presión</Text>
           <Text style={styles.boxText}>{data.main.pressure}hPa</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.boxLabel}>Wind</Text>
+          <Text style={styles.boxLabel}>Viento</Text>
           <Text style={styles.boxText}>{data.wind.speed} m/s</Text>
         </View>
       </ScrollView>
