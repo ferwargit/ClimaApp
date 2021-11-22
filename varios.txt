@@ -30,8 +30,6 @@ npm install redux-thunk@^2.3.0
 npm install react-redux@^7.2.2
 
 
-** PARA ABRIR WEBBROSER **
-expo install expo-web-browser
 
 
 
