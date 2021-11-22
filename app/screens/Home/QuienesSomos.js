@@ -33,20 +33,31 @@ export default class QuienesSomos extends Component {
                         Aplicación diseñada para la busqueda del clima en ciudades de todo el mundo.</Text>
                     <Text style={styles.instructions}>Se desarrollo código propio con base de información en la documentación de React-Native, plataforma Udemy y Google. También se reutilizo código de las siguientes fuentes:</Text>
                     <Text style={styles.textTitle}>Presentación</Text>
+                    
                     <TouchableOpacity
                         style={styles.btn}
                         onPress={this._handleOpenWithWebBrowser}>
                         <Text style={{textAlign: 'center'}}>3° Webinar: Interfaz gráfica con React Native   Codo a Codo & IBM</Text>
                     </TouchableOpacity>
+                    
                     <Text style={styles.textTitle}>Navegación</Text>
+                    
                     <TouchableOpacity
                         style={styles.btnUdemy}
                         onPress={this._handleOpenWithWebBrowserUdemy}
-                    ><Text style={{textAlign: 'center'}}>Udemy</Text></TouchableOpacity>
+                    ><Text style={{textAlign: 'center'}}>Udemy</Text>
+                    </TouchableOpacity>
+
                     <Text style={styles.instructions}>Curso: React Native Expo: Creando un TripAdvisor de Restaurantes - Sección 5: Sistema de Navegación</Text>
                     <Text style={styles.textTitle}>Buscar</Text>
+                    
+                    <TouchableOpacity
+                        style={styles.btnBuscar}
+                        onPress={this._handleOpenWithWebBrowserBuscar}
+                    >
                     <Text style={styles.instructions}>Weather App with React Native & Redux using openweathermap api</Text>
-                    <Text>https://www.youtube.com/watch?v=Af36ojofSQE&t=287s</Text>
+                    </TouchableOpacity>
+                    
                     <Text style={styles.textTitle}>Ciudades</Text>
                     <Text style={styles.instructions}>Flatlist React Native - Create a brewery app using API - Part 1</Text>
                     <Text>https://www.youtube.com/watch?v=rYkTdax5ESg</Text>
@@ -78,6 +89,9 @@ export default class QuienesSomos extends Component {
     };
     _handleOpenWithWebBrowserUdemy = () => {
         WebBrowser.openBrowserAsync('https://www.udemy.com/');
+    };
+    _handleOpenWithWebBrowserBuscar = () => {
+        WebBrowser.openBrowserAsync('https://www.youtube.com/watch?v=Af36ojofSQE&t=287s');
     };
 }
 
@@ -138,6 +152,18 @@ const styles = StyleSheet.create({
         borderRadius: 90,
         padding: 8,
         width: '30%'
+    },
+    btnBuscar: {
+        //flex: 1,
+        elevation: 5,
+        backgroundColor: '#00aaff',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        borderRadius: 90,
+        padding: 8,
+        width: '90%'
     }
 
 });
