@@ -6,7 +6,8 @@ import sol_nube from "./assets/img/sol_nube.png";
 import { Provider } from 'react-redux';
 import store from './app/store/Buscar/index';
 
-LogBox.ignoreLogs(["It appears that"]);
+
+//LogBox.ignoreLogs(["It appears that"]);
 
 
 export default function App() {
