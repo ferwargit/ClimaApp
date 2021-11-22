@@ -6,12 +6,13 @@ import data from '../../citiesList.json';
 
 
 
-export default class Favoritos extends React.Component<Props> {
+export default class Favoritos extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            dataSource: []
+            dataSource: [],
+            filterCities: []
         }
     }
 
@@ -70,7 +71,7 @@ export default class Favoritos extends React.Component<Props> {
                         fontSize: 16,
                         fontWeight: 'bold',
                         color: '#fff'
-                    }}>Lista de Ciudades</Text>
+                    }}>Lista de Ciudades Disponibles</Text>
                 </View>
     
                 {/* SEARCH BAR */}
@@ -78,7 +79,7 @@ export default class Favoritos extends React.Component<Props> {
                     backgroundColor: '#B3E5FC'
                 }}>
                     <TextInput
-                    placeholder="Buscar"
+                    placeholder="Ingrese una ciudad ..."
                     style={{
                         margin: 15,
                         padding: 7,
