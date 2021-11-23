@@ -24,25 +24,6 @@ export default class Favoritos extends React.Component {
         });
     }
     
-
-    /* async componentDidMount(){
-        
-        let url = 'https://api.openbrewerydb.org/breweries'
-        fetch(url)
-        .then((response) => response.json())
-        .then((json) => {
-            console.log('JSON', json)
-            this.setState({ciudades: json})
-            return json
-        })
-        .catch((error) =>{
-            console.log(error)
-            this.setState({ciudades: []})
-        })
-    } */
-
-    
-
     onChangeText(text){
         //console.log("textChanged", text);
         let filterArray = this.state.filterCities
