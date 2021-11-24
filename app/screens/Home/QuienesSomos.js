@@ -13,7 +13,7 @@ export default class QuienesSomos extends Component {
         <TouchableOpacity onPress={() => Linking.openURL("https://www.linkedin.com/in/yamila-paz-b-38b169215/")}>
           <Text style={{ color: "#01579B" }}>* Yamila Bulich</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => Linking.openURL("https://www.linkedin.com")}>
+        <TouchableOpacity onPress={() => Linking.openURL("https://www.linkedin.com/in/jonathan-pardo-4797891a3/")}>
           <Text style={{ color: "#01579B" }}>* Jonathan Pardo</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => Linking.openURL("https://www.linkedin.com/in/rey-salazar/")}>
