@@ -69,7 +69,9 @@ const styles = StyleSheet.create({
         height: 470,
     },
     location: {
-        color: 'green'
+        color: '#01579B',
+        fontSize: 17,
+        fontWeight: 'bold'
     }
 
 });
