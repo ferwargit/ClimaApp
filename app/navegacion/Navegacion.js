@@ -1,17 +1,11 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import { Icon } from "react-native-elements/dist/icons/Icon";
-
 
 import HomeStack from "./HomeStack";
 import BuscarStack from "./BuscarStack";
-import FavoritosStack from "./FavoritosStack";
-
-// import Home from "../screens/Home";
-// import Buscar from "../screens/Buscar";
-// import Favoritos from "../screens/Favoritos";
+import MapaStack from "./MapaStack";
 
 
 const Tab = createBottomTabNavigator();
@@ -41,9 +35,9 @@ export default function Navegacion() {
                     options={{ title: "Buscar" }}
                 />
                 <Tab.Screen
-                    name="favoritos"
-                    component={FavoritosStack}
-                    options={{ title: "Favoritos" }}
+                    name="mapa"
+                    component={MapaStack}
+                    options={{ title: "Mapa" }}
                 />                
             </Tab.Navigator>
         </NavigationContainer>
@@ -56,14 +50,14 @@ function screenOptions(route, color) {
 
     switch (route.name) {
         
+        case "home":
+            iconName = "home-outline";
+            break;
         case "buscar":
             iconName = "magnify";
             break;
-        case "favoritos":
-            iconName = "star-outline";
-            break;
-        case "home":
-            iconName = "home-outline";
+        case "mapa":
+            iconName = "map-marker-outline";
             break;
         default:
             break;

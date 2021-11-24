@@ -29,7 +29,7 @@ export default class QuienesSomos extends Component {
             Proyecto grupal desarrollado en el Curso de especialización en desarrolo mobile - Codo a Codo | IBM Skillsbuild, en Noviembre de 2021.</Text>
           <Text style={styles.instructions}>
             Aplicación diseñada para la busqueda del clima en ciudades de todo el mundo.</Text>
-          <Text style={styles.instructions}>Se desarrollo código propio con base de información en la documentación de React-Native, plataforma Udemy y Google. También se reutilizo código de las siguientes fuentes:</Text>
+          <Text style={styles.instructions}>Se desarrollo código con base de información en la documentación de React-Native, plataforma Udemy y Google. También se reutilizo código de las siguientes fuentes:</Text>
           <Text style={styles.textTitle}>Presentación</Text>
           <TouchableOpacity
             onPress={() => Linking.openURL("https://www.youtube.com/watch?v=QA-6-mmJFDo")}>
@@ -40,25 +40,18 @@ export default class QuienesSomos extends Component {
             onPress={() => Linking.openURL("https://www.udemy.com/")}>
             <Text style={{ color: '#01579B', textAlign: 'center' }}>* Udemy</Text>
           </TouchableOpacity>
-          <Text style={styles.instructions}>Curso: React Native Expo: Creando un TripAdvisor de Restaurantes - Sección 5: Sistema de Navegación</Text>
+          <Text style={styles.instructions}>Curso: React Native Expo: Creando un TripAdvisor de Restaurantes - Sección 5</Text>
           <Text style={styles.textTitle}>Buscar</Text>
           <TouchableOpacity
             onPress={() => Linking.openURL("https://www.youtube.com/watch?v=Af36ojofSQE&t=287s")}>
             <Text style={{ color: '#01579B', textAlign: 'center' }}>* Weather App with React Native & Redux using openweathermap api</Text>
           </TouchableOpacity>
-          <Text style={styles.textTitle}>Ciudades</Text>
+          <Text style={styles.textTitle}>Mapa</Text>
           <TouchableOpacity
-            onPress={() => Linking.openURL("https://www.youtube.com/watch?v=rYkTdax5ESg")}>
-            <Text style={{ color: '#01579B', textAlign: 'center' }}>* Flatlist React Native - Create a brewery app using API - Part 1</Text>
+            onPress={() => Linking.openURL("https://www.udemy.com/")}>
+            <Text style={{ color: '#01579B', textAlign: 'center' }}>Udemy</Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL("https://www.youtube.com/watch?v=L96tOfz3YnU")}>
-            <Text style={{ color: '#01579B', textAlign: 'center' }}>* Search in FlatList React Native - Create a brewery app using API - Part 2</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL("https://www.youtube.com/watch?v=5vFgqCfggC0")}>
-            <Text style={{ color: '#01579B', textAlign: 'center' }}>* #12 Fetching Json data in React Native</Text>
-          </TouchableOpacity>
+          <Text style={styles.instructions}>Curso: React Native Expo: Creando un TripAdvisor de Restaurantes - Sección 9</Text>
           <Text style={styles.textTitle}>Tecnologías/Conceptos</Text>
           <Text style={styles.instructions}>Lenguaje de programación: React-Native</Text>
           <Text style={styles.instructions}>Toolkit: Expo CLI / Figma</Text>
