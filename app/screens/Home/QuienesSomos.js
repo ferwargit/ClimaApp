@@ -8,7 +8,6 @@ import {
   Linking,
   TouchableOpacity
 } from "react-native";
-import Hyperlink from "react-native-hyperlink";
 
 export default function QuienesSomos() {
   const ReySalazar = `https://www.linkedin.com/in/rey-salazar/`;
@@ -61,9 +60,5 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 18,
   },
-  sectionDes: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: "normal",
-  },
+  
 });

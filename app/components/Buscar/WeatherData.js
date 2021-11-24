@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
 import { ScrollView, View, Text, StyleSheet, Image } from "react-native";
-
+//import { MapContainer, Map, Marker, Popup, TileLayer } from "react-leaflet";
 import { useState, useEffect } from "react";
 import ThemeContext from "../../../context/ThemeContext";
 
@@ -38,11 +38,14 @@ const WeatherData = ({ data }) => {
     case "lluvia ligera":
       iconName = "cloud-rain";
       break;
+    case "nubes dispersas":
+      iconName = "cloud";
+      break;
   }
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: darkTheme ? "#232634" : "#F2F2F2",
+      backgroundColor: darkTheme ? "#01a9f4" : "#90caf9", // #F2F2F2"  - "#232634" : ,
       alignItems: "center",
     },
     refreshButton: {
@@ -123,8 +126,8 @@ const WeatherData = ({ data }) => {
           <Feather
             style={{ marginTop: 50 }}
             name={iconName} // sun, cloud, cloud-rain, cloud-snow, cloud-drizzle, cloud-lightning, wind
-            size={40}
-            color="orange"
+            size={45}
+            color="#f9c02d"
           />
           <View style={styles.temperatureView}>
             <Text style={styles.temperatureText}>{celsius}</Text>

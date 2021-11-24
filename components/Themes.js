@@ -18,5 +18,4 @@ const AppTheme = {
         backgroundColor: "#333",
     }    
 }
-
 export default AppTheme;
