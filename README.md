@@ -7,7 +7,7 @@ Aplicación para la búsqueda del clima en ciudades de todo el mundo.
 
 # Mapa de ubicación actual
 
-<img alt="Mapa de ubicación actual" src="" width="150"/>
+<img alt="Mapa de ubicación actual" src="https://github.com/ferwargit/ClimaApp/blob/main/assets/img/Mapa.png" width="150"/>
 
 # Tecnología
 - Lenguaje de Programación: React-Native
