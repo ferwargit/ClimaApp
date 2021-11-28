@@ -28,8 +28,8 @@ export default class QuienesSomos extends Component {
           <Text style={styles.instructions}>
             Proyecto grupal desarrollado en el Curso de especialización en desarrolo mobile - Codo a Codo | IBM Skillsbuild, en Noviembre de 2021.</Text>
           <Text style={styles.instructions}>
-            Aplicación diseñada para la busqueda del clima en ciudades de todo el mundo.</Text>
-          <Text style={styles.instructions}>Se desarrollo código con base de información en la documentación de React-Native, plataforma Udemy y Google. También se reutilizo código de las siguientes fuentes:</Text>
+            Aplicación diseñada para la búsqueda del clima en ciudades de todo el mundo.</Text>
+          <Text style={styles.instructions}>Se desarrolló código con base de información en la documentación de React-Native, plataforma Udemy y Google. También se reutilizó código de las siguientes fuentes:</Text>
           <Text style={styles.textTitle}>Presentación</Text>
           <TouchableOpacity
             onPress={() => Linking.openURL("https://www.youtube.com/watch?v=QA-6-mmJFDo")}>
