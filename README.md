@@ -1,6 +1,10 @@
 # Aplicación: ClimaApp
 Aplicación para la búsqueda del clima en ciudades de todo el mundo.
 
+# La interfaz de usuario
+
+<img alt="Interfaz de usuario" src="" width="200"/>
+
 # Tecnología
 - Lenguaje de Programación: React-Native
 - Entorno de Desarrollo: Expo CLI 4.5.2 / Expo Go
