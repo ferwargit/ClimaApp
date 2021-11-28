@@ -3,7 +3,11 @@ Aplicación para la búsqueda del clima en ciudades de todo el mundo.
 
 # La interfaz de usuario
 
-<img alt="Interfaz de usuario" src="" width="200"/>
+<img alt="Interfaz de usuario" src="https://github.com/ferwargit/ClimaApp/blob/main/assets/img/Buscar.png" width="150"/>
+
+# Mapa de ubicación actual
+
+<img alt="Mapa de ubicación actual" src="" width="150"/>
 
 # Tecnología
 - Lenguaje de Programación: React-Native
