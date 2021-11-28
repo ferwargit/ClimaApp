@@ -126,7 +126,7 @@ export default  Favoritos =()=>{
                 keyExtractor={ ciudad => ciudad.id}
             />
 
-            <Button onPress={() => obtenerStorage()} title="traer" color="#00aaff" />
+            <Button onPress={() => obtenerStorage()} title="actualizar" color="#00aaff" />
             
         </View>
 
