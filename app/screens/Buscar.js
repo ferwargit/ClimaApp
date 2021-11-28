@@ -41,7 +41,7 @@ export default function Buscar() {
     }
 
     async function guardarStorage () {
-             
+        if (ciudad!= ''){     
         let id=generaID(3);   
         let ciudadObj={ciudad, id};        
         //setCiudades([...ciudades, ciudadObj]);
@@ -52,6 +52,7 @@ export default function Buscar() {
         }catch(err){
             return Alert.alert('Error', 'Error al guardar en favoritos', [{ text: 'OK' }]);
         }
+    }else return Alert.alert('Error', 'No se puede guardar campo vacío', [{ text: 'OK' }]);
     };
 
     const obtenerStorage = async() => {
