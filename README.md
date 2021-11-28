@@ -27,4 +27,6 @@ Aplicación para la búsqueda del clima en ciudades de todo el mundo.
 - 6.-En el archivo **_config.json_** ingresa tu "**openweathermap_api_key**".
 - 7.-Verifica la conectividad con tu celular, ejecuta en la terminal: **adb devices**.
 - 8.-Luego en la terminal ejecutar: **npm start**.
-- 9.-Abre la aplicación **_Expo Go_** de tu celular y escanea el **codigo QR**.
+- 9.-Abre la aplicación **_Expo Go_** de tu celular, luego:
+  - Opción 1 : Escanea el **codigo QR** en la consola Expo Developer que se abre dentro del navegador web o en la terminal de VSC.
+  - Opción 2 : Presiona "**Run on Android device/emulator**" en la consola Expo Developer que se abre dentro del navegador web.
