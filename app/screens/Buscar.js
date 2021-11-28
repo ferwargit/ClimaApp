@@ -16,7 +16,7 @@ export default function Buscar() {
 
     const searchSubmitHandler = () => {
         if (search === '') {
-            return Alert.alert('Validation', 'City name is required!', [{ text: 'OK' }]);
+            return Alert.alert('Validación', 'Se requiere el nombre de una ciudad', [{ text: 'OK' }]);
         }
 
         setLoading(true);
