@@ -101,14 +101,14 @@ export default  Favoritos =()=>{
                                 color: '#0277BD'
                             }}>{item.ciudad}</Text>
                             
-                            <Text style={{
+                            {/*<Text style={{
                                 fontSize: 20,
                                 fontWeight: 'bold',
                                 marginBottom: 5,
                                 marginTop:0,
                                 marginLeft: 300,
                                 color: '#0277BD'
-                            }}>{`${obtenerclima(item.ciudad)}`}&#8451;</Text>
+                            }}>{`${obtenerclima(item.ciudad)}`}&#8451;</Text>*/}
                             
                         </View>
                         <Button onPress={() => eliminarCiudad(item.id)} title="eliminar" color="#00aaff" />

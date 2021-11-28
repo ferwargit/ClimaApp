@@ -83,7 +83,6 @@ export default function Buscar() {
                 </TouchableOpacity>: null}
 
                 {/*data ? <Button onPress={() =>guardarStorage()} title="Añadir a favoritos" color="#00aaff" />: null*/}
-                <Button onPress={() => obtenerStorage()} title="traer" color="#00aaff" />
             </View>            
             </TouchableWithoutFeedback> 
     );
