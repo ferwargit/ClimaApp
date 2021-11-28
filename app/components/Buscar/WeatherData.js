@@ -1,9 +1,8 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
 
 const WeatherData = ({ data }) => {
-  const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
+  // const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
   const celsius = (data.main.temp - 273.15).toFixed(2);
 
   return (
@@ -17,8 +16,6 @@ const WeatherData = ({ data }) => {
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Temperatura</Text>
           <View style={styles.tempContainer}>
-            {/* <Text style={styles.boxText}>{data.main.temp}K</Text> */}
-            {/* <Text style={styles.boxText}>{fahrenheit}&#8457;</Text> */}
             <Text style={styles.boxText}>{celsius}&#8451;</Text>
           </View>
         </View>
@@ -56,7 +53,6 @@ const styles = StyleSheet.create({
   },
   box: {
     borderWidth: 2,
-    //borderColor: '#ddd',
     borderColor: '#03A9F4',
     padding: 15,
     marginBottom: 10,

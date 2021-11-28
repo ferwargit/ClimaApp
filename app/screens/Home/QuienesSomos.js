@@ -87,7 +87,6 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     textAlign: 'center',
     fontFamily: 'notoserif',
-
   },
   textTitle: {
     fontSize: 20,
@@ -95,48 +94,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'notoserif',
     color: '#039BE5'
-
   },
-  /* item: {
-    padding: 5,
-    fontSize: 16,
-
-  }, */
-  /* btn: {
-    //flex: 1,
-    elevation: 5,
-    backgroundColor: '#00aaff',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    borderRadius: 90,
-    padding: 8,
-    width: '90%'
-  }, */
-  /* btnUdemy: {
-    //flex: 1,
-    elevation: 5,
-    backgroundColor: '#00aaff',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    borderRadius: 90,
-    padding: 8,
-    width: '30%'
-  }, */
-  /* btnBuscar: {
-    //flex: 1,
-    elevation: 5,
-    backgroundColor: '#00aaff',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    borderRadius: 90,
-    padding: 8,
-    width: '90%'
-  } */
 
 });

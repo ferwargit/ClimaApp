@@ -1,16 +1,14 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 
 const Form = ({ search, onSetSearch, onSubmit }) => {
   return (
-    <View style={styles.container}>
-      {/* <Text style={styles.heading}>Ingrese el nombre de la ciudad y presione el botón de búsqueda</Text> */}
-      <View>
+    <View style={styles.container}> 
+    < View >
         <TextInput style={styles.input} placeholder="Ingrese una ciudad ..." value={search} onChangeText={(val) => onSetSearch(val)} />
         <Button title="Buscar" onPress={onSubmit} color="#00aaff"/>
-      </View>
-    </View>
+      </View >
+    </View >
   );
 };
 
