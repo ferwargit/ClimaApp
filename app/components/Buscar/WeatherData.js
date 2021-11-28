@@ -2,8 +2,8 @@ import React from 'react';
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
 
 const WeatherData = ({ data }) => {
-  // const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
-  const celsius = (data.main.temp - 273.15).toFixed(2);
+  
+  const celsius = (data.main.temp - 273.15).toFixed(1);
 
   return (
     <View style={styles.container} onStartShouldSetResponder={() => true}>
