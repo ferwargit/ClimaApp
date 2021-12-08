@@ -14,15 +14,15 @@ const Form = ({ search, onSetSearch, onSubmit }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    padding: 10,
     //backgroundColor: '#f1f1f1',
     backgroundColor: '#B3E5FC'
   },
-  heading: {
+  /* heading: {
     fontSize: 20,
     textAlign: 'center',
     marginBottom: 20,
-  },
+  }, */
   input: {
     borderWidth: 1,
     borderColor: '#dbdbdb',

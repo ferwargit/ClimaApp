@@ -13,6 +13,9 @@ export const getWeather = (city, onSuccess = () => {}, onError = () => {}) => {
       }
 
       const resData = await res.json();
+      // console.log(resData.coord.lat)
+      // console.log(resData.coord.lon)
+
       dispatch({
         type: GET_WEATHER,
         payload: resData,

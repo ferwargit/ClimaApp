@@ -15,6 +15,8 @@ export default function Buscar() {
     const { data, error } = useSelector(state => state.weather);
 
     const searchSubmitHandler = () => {
+
+
         if (search === '') {
             return Alert.alert('Validación', 'Se requiere el nombre de una ciudad', [{ text: 'OK' }]);
         }
