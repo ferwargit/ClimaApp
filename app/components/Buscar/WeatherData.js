@@ -26,7 +26,7 @@ const WeatherData = ({ data }) => {
 
         let { width, height } = Dimensions.get('window')
         const aspect_ratio = width / height
-        const latitude_delta = 15 // 60 alto zoom
+        const latitude_delta = 5 // 60 alto zoom
         const longitude_delta = latitude_delta * aspect_ratio
 
         // const loc = await Location.getCurrentPositionAsync({});
