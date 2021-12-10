@@ -41,18 +41,31 @@ export default function Buscar() {
     }
 
     async function guardarStorage () {
-        if (ciudad!= ''){     
+        if (ciudad!= ''){ 
+            if (ciudades.length!=0){
+                for (var i=0; i<ciudades.length; i++){
+                    try{
+                        let valor = Object.values(ciudades[i]); 
+                        if (valor[0]==ciudad){
+                            return Alert.alert('Error', 'La ciudad ya está guardada', [{ text: 'OK' }]); 
+                        }
+                    }catch(err){
+                        console.log('error');
+                    }
+                    
+                }
+        }
+        
         let id=generaID(3);   
-        let ciudadObj={ciudad, id};        
-        //setCiudades([...ciudades, ciudadObj]);
+        let ciudadObj={ciudad, id};     
         ciudades.push(ciudadObj);
         setCiudad('');
         try{            
             await AsyncStorage.setItem('ciudad', JSON.stringify(ciudades));
         }catch(err){
             return Alert.alert('Error', 'Error al guardar en favoritos', [{ text: 'OK' }]);
-        }
-    }else return Alert.alert('Error', 'No se puede guardar campo vacío', [{ text: 'OK' }]);
+        }  
+        }else return Alert.alert('Error', 'No se puede guardar campo vacío', [{ text: 'OK' }]);
     };
 
     const obtenerStorage = async() => {
@@ -64,6 +77,7 @@ export default function Buscar() {
       }else{
         setCiudades([]);
     } 
+    console.log(ciudades);
     }catch(e){
     return Alert.alert('Error', 'Error al traer en favoritos', [{ text: 'OK' }]);
      }
@@ -80,7 +94,7 @@ export default function Buscar() {
                 <Weather loading={loading} data={data} error={error} />
 
                 {data ? <TouchableOpacity activeOpacity={0.8} style={styles.btn} onPress={() =>guardarStorage()}>
-                <AntDesign name="plus" size={30} color="#FFF" />
+                <AntDesign name="star" size={30} color="#FFF" />
                 </TouchableOpacity>: null}
 
                 {/*data ? <Button onPress={() =>guardarStorage()} title="Añadir a favoritos" color="#00aaff" />: null*/}
