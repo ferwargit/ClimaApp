@@ -52,16 +52,16 @@ const WeatherData = ({ data }) => {
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Temperatura</Text>
           <View style={styles.tempContainer}>
-            <Text style={styles.boxText}>{celsius}&#8451;</Text>
+            <Text style={styles.boxText}>{celsius} &#8451;</Text>
           </View>
         </View>
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Humedad</Text>
-          <Text style={styles.boxText}>{data.main.humidity}%</Text>
+          <Text style={styles.boxText}>{data.main.humidity} %</Text>
         </View>
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Presión</Text>
-          <Text style={styles.boxText}>{data.main.pressure}hPa</Text>
+          <Text style={styles.boxText}>{data.main.pressure} hPa</Text>
         </View>
         <View style={styles.box}>
           <Text style={styles.boxLabel}>Viento</Text>
