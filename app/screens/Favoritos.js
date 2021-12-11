@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { View, Text, Button} from "react-native";
+import { StyleSheet, View, Text, Button, Image} from "react-native";
 import { FlatList} from "react-native-gesture-handler";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -91,15 +91,17 @@ export default  Favoritos =()=>{
                             borderRadius: 10,
                             borderColor: '"ddd',
                             borderWidth: 1,
-                            padding: 10
+                            padding: 10,
                             }}>
                                 
                             <Text style={{
-                                fontSize: 15,
+                                fontSize: 20,
                                 fontWeight: 'bold',
-                                marginBottom: 5,
                                 color: '#0277BD'
-                            }}>{item.ciudad}</Text>
+                                // 7.-Añado la temperatura y el icono a la ciudad
+                            }}>{item.ciudad}     {item.temp} &#8451; <Image style={styles.image}
+                            source={{ uri: `http://openweathermap.org/img/wn/${item.icon}.png` }} /></Text>
+                            
                             
                             {/*<Text style={{
                                 fontSize: 20,
@@ -134,3 +136,14 @@ export default  Favoritos =()=>{
 
     )
 }
+
+const styles = StyleSheet.create({
+    image: {
+        width: 50,
+        height: 50,
+        //alignContent: 'center',
+        //position: 'absolute',
+        //right: 5
+        
+      },
+});
