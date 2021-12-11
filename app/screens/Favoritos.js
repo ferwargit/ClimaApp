@@ -49,7 +49,7 @@ export default  Favoritos =()=>{
         }}>
             
             {/* HEADER */}
-            <View style={{
+            {/* <View style={{
                 borderBottomWidth: 1,
                 borderColor: '#ddd',
                 alignItems: 'center',
@@ -61,7 +61,7 @@ export default  Favoritos =()=>{
                     fontWeight: 'bold',
                     color: '#fff'
                 }}>Favoritos</Text>
-            </View>
+            </View> */}
             
             {/* LISTA DE CIUDADES */}
             
