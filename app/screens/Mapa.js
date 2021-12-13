@@ -51,8 +51,8 @@ const Mapa = () => {
                         draggable
                     />
                     
-                    <Text style={styles.location}>{`Latitud: ${location.latitude}
-Longitud: ${location.longitude}`}</Text>
+                    {<Text style={styles.location}>{`Latitud: ${location.latitude}
+Longitud: ${location.longitude}`}</Text>}
                     
                 </MapView>
             )}

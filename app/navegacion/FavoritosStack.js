@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator, headerStyle, headerTintColor, headerTitleStyle  } from "@react-navigation/stack";
 
-import Mapa from "../screens/Mapa";
+import Favoritos from "../screens/Favoritos";
 
 
 const Stack = createStackNavigator();
@@ -20,9 +20,9 @@ export default function MapaStack() {
           }}
         >
             <Stack.Screen
-                name="Mapa"
-                component={Mapa}
-                options={{ title: "Mapa" }}
+                name="Favoritos"
+                component={Favoritos}
+                options={{ title: "Favoritos" }}
             />
         </Stack.Navigator>
     )
