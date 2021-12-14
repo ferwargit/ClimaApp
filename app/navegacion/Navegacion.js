@@ -5,7 +5,7 @@ import { Icon } from "react-native-elements/dist/icons/Icon";
 
 import HomeStack from "./HomeStack";
 import BuscarStack from "./BuscarStack";
-import MapaStack from "./MapaStack";
+import FavoritosStack from "./FavoritosStack";
 
 
 const Tab = createBottomTabNavigator();
@@ -35,9 +35,9 @@ export default function Navegacion() {
                     options={{ title: "Buscar" }}
                 />
                 <Tab.Screen
-                    name="mapa"
-                    component={MapaStack}
-                    options={{ title: "Mapa" }}
+                    name="favoritos"
+                    component={FavoritosStack}
+                    options={{ title: "Favoritos" }}
                 />                
             </Tab.Navigator>
         </NavigationContainer>
@@ -56,8 +56,8 @@ function screenOptions(route, color) {
         case "buscar":
             iconName = "magnify";
             break;
-        case "mapa":
-            iconName = "map-marker-outline";
+        case "favoritos":
+            iconName = "star";
             break;
         default:
             break;
