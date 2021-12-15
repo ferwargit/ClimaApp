@@ -6,6 +6,7 @@ import { Icon } from "react-native-elements/dist/icons/Icon";
 import HomeStack from "./HomeStack";
 import BuscarStack from "./BuscarStack";
 import FavoritosStack from "./FavoritosStack";
+import MapaStack from "./MapaStack";
 
 
 const Tab = createBottomTabNavigator();
@@ -35,6 +36,11 @@ export default function Navegacion() {
                     options={{ title: "Buscar" }}
                 />
                 <Tab.Screen
+                    name="mapa"
+                    component={MapaStack}
+                    options={{ title: "Mapa" }}
+                /> 
+                <Tab.Screen
                     name="favoritos"
                     component={FavoritosStack}
                     options={{ title: "Favoritos" }}
@@ -58,6 +64,9 @@ function screenOptions(route, color) {
             break;
         case "favoritos":
             iconName = "star";
+            break;
+        case "mapa":
+            iconName = "map-marker-outline";
             break;
         default:
             break;
