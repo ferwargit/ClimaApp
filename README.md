@@ -10,7 +10,7 @@ Aplicación para la búsqueda del clima en ciudades de todo el mundo.
 <img alt="Mapa de ubicación actual" src="https://github.com/ferwargit/ClimaApp/blob/main/assets/img/Mapa.png" width="150"/>
 
 # Tecnología
-- Lenguaje de Programación: **React-Native**
+- Framework basado en librería de JavaScipt React: **React-Native**
 - Entorno de Desarrollo: **Expo CLI 4.5.2 / Expo Go**
 - IDE: **Visual Studio Code**
 - Kit de Herramientas: **Figma** (https://www.figma.com/proto/HwWnExzU0YEPpKoabdO6Gj/React-Native?node-id=12%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=12%3A2&show-proto-sidebar=1)
