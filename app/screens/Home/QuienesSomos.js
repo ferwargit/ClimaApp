@@ -53,7 +53,7 @@ export default class QuienesSomos extends Component {
           </TouchableOpacity>
           <Text style={styles.instructions}>Curso: React Native Expo: Creando un TripAdvisor de Restaurantes - Sección 9</Text>
           <Text style={styles.textTitle}>Tecnologías/Conceptos</Text>
-          <Text style={styles.instructions}>Lenguaje de programación: React-Native</Text>
+          <Text style={styles.instructions}>Framework de programación: React-Native</Text>
           <Text style={styles.instructions}>Toolkit: Expo CLI / Figma</Text>
           <Text style={styles.instructions}>Fuente de datos: API</Text>
           <TouchableOpacity
